@@ -1,7 +1,7 @@
 # Showcase Erik.Bamberg
 # research-projects-ml
 
-This Git repository showcases some machine-learnkng research projects I have been working on and tested overtime.
+This Git repository showcases some machine-learning research projects I have been working on and tested overtime.
 The repository doesn't contains productivity ready code.The projects are mostly code based on tutorial and getting started blogs I played around out of interest and curiosity.
 
 Two notable projects: the finetuning of LLama 3.1 and the implementation of Control Nets with diffusers.
@@ -17,7 +17,9 @@ Advanced Natural Language Processing: LLama 3.1 excels in understanding and gene
 Customization through Finetuning: This project demonstrates how to finetune LLama 3.1 for specific applications, enhancing its performance and relevance to particular use cases.
 
 ### Implementation Details
-The finetuning process involves adjusting the model's parameters to better suit specific datasets and tasks. This project includes scripts and guidelines for setting up the finetuning environment, preparing the dataset, and executing the finetuning process. By following these instructions, developers can customize LLama 3.1 to meet their unique requirements.
+The finetuning process involves adjusting the model's parameters to better suit specific datasets and tasks. This project includes examples for setting up the finetuning environment, preparing the dataset, and executing the finetuning process. 
+The project uses the small versionn of Llame and uses optimizations to run the finetune process on GoogleColab Notebook, but the same fine-tuning concept can be used to train larger model-versions on multiple GPU'.s 
+By following these example, developers can customize LLama 3.1 to meet their unique requirements.
 
 ## Project 2: Diffusers - How to Use Control Nets
 ### Overview
