@@ -1,5 +1,4 @@
-# Showcase Erik.Bamberg
-# research-projects-ml
+# Showcase Erik Bamberg for research-projects-ml
 
 This Git repository showcases some machine-learning research projects I have been working on and tested overtime.
 The repository doesn't contains productivity ready code.The projects are mostly code based on tutorial and getting started blogs I played around out of interest and curiosity.
@@ -32,3 +31,17 @@ Guided Diffusion: Control Nets allow for more precise control over the diffusion
 
 ### Implementation Details
 This project provides some test use cases which are implemented uses Control Nets with diffusers. It includes sample code for integrating Control Nets into existing diffuser models.
+
+## Project 3: Running MLFlow server/UI on Google colab
+utilities/examples_MLFlow_InColab_with_NGROK
+### Overview
+This projects focused on running mlFlow in a Colab Notebook and make the UI endpoint accessible from outside of Google Colab.
+
+### Key Features
+Run MLFlow UI and use NGROK to publish the endpoint so that your MLFLow Service is accessible through the internet.
+
+###  Implementation Details
+This project makes use of NGROK. see  ngrok.com for more details
+
+
+
