@@ -21,6 +21,8 @@ The project uses the small versionn of Llame and uses optimizations to run the f
 By following these example, developers can customize LLama 3.1 to meet their unique requirements.
 
 ## Project 2: Diffusers - How to Use Control Nets
+Image_Generation/examples_diffusers_...
+
 ### Overview
 This project focuses on the use of Control Nets with diffusers. Diffusers are a type of neural network architecture designed for various image and signal processing tasks. Especially for Image-Generation. Control Nets, in this context, provide a mechanism to guide the diffusion process, improving the model's ability to generate and refine outputs.
 
