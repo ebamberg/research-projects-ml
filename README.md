@@ -5,6 +5,9 @@ The repository doesn't contains productivity ready code.The projects are mostly 
 
 Two notable projects: the finetuning of LLama 3.1 and the implementation of Control Nets with diffusers.
 
+- LLM Finetuning of LLama 3.1
+- Diffusers - How to Use Control Nets
+- Running MLFlow server/UI on Google colab 
 
 ## Project 1: LLM Finetuning of LLama 3.1
 ### Overview
