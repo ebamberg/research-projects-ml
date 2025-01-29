@@ -4,7 +4,9 @@ This Git repository showcases some machine-learning research projects I have bee
 The repository doesn't contains productivity ready code.The projects are mostly code based on tutorial and getting started blogs I played around out of interest and curiosity.
 
 Two notable projects: the finetuning of LLama 3.1 and the implementation of Control Nets with diffusers.
-
+- CrewAI - Agents with the CrewAI Framework
+- Document Clustering
+- Run LLM's in Google Colab with Ollama 
 - LLM Finetuning of LLama 3.1
 - Diffusers - How to Use Control Nets
 - Running MLFlow server/UI on Google colab 
