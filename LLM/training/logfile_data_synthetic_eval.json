@@ -1,0 +1,282 @@
+[
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.20,sess_391494,alex.martin,2025-07-21 14:22:26,User authentication successful,INFO\n192.168.1.20,sess_391494,alex.martin,2025-07-21 14:23:26,User logout successful,INFO\n192.168.1.20,sess_391494,alex.martin,2025-07-21 14:28:26,Database query executed,INFO\n192.168.1.20,sess_391494,alex.martin,2025-07-21 14:32:26,Connection established,DEBUG\n192.168.1.20,sess_391494,alex.martin,2025-07-21 14:38:26,Database query executed,INFO\n192.168.1.20,sess_391494,alex.martin,2025-07-21 14:52:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.25,sess_259855,chris.rodriguez,2025-07-21 14:22:26,User authentication successful,INFO\n192.168.1.25,sess_259855,chris.rodriguez,2025-07-21 14:26:26,Form submission processed,INFO\n192.168.1.25,sess_259855,chris.rodriguez,2025-07-21 14:28:26,Report generation started,INFO\n192.168.1.25,sess_259855,chris.rodriguez,2025-07-21 14:34:26,Connection established,DEBUG\n192.168.1.25,sess_259855,chris.rodriguez,2025-07-21 14:42:26,API call to user service,DEBUG\n192.168.1.25,sess_259855,chris.rodriguez,2025-07-21 14:47:26,Loading user dashboard,INFO\n192.168.1.25,sess_259855,chris.rodriguez,2025-07-21 14:57:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n172.16.1.200,sess_179454,tom.anderson,2025-07-21 14:22:26,User authentication successful,INFO\n172.16.1.200,sess_179454,tom.anderson,2025-07-21 14:24:26,Session timeout warning,INFO\n172.16.1.200,sess_179454,tom.anderson,2025-07-21 14:25:26,Backup operation completed,INFO\n172.16.1.200,sess_179454,tom.anderson,2025-07-21 14:26:26,User logout successful,DEBUG\n172.16.1.200,sess_179454,tom.anderson,2025-07-21 14:34:26,Session timeout warning,DEBUG\n172.16.1.200,sess_179454,tom.anderson,2025-07-21 15:04:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n91.189.89.199,sess_465982,anna.garcia,2025-07-21 14:22:26,User authentication successful,INFO\n91.189.89.199,sess_465982,anna.garcia,2025-07-21 14:24:26,Elevated permissions requested,ERROR\n91.189.89.199,sess_465982,anna.garcia,2025-07-21 14:26:26,System file access attempt,ERROR\n91.189.89.199,sess_465982,anna.garcia,2025-07-21 14:28:26,Privilege escalation detected,ERROR\n91.189.89.199,sess_465982,anna.garcia,2025-07-21 14:30:26,Security policy violation,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n10.0.0.100,sess_296376,anna.garcia,2025-07-22 14:22:26,User authentication successful,INFO\n10.0.0.100,sess_296376,anna.garcia,2025-07-22 14:24:26,User authentication successful,DEBUG\n10.0.0.100,sess_296376,anna.garcia,2025-07-22 14:28:26,User logout successful,DEBUG\n10.0.0.100,sess_296376,anna.garcia,2025-07-22 14:30:26,User preferences loaded,DEBUG\n10.0.0.100,sess_296376,anna.garcia,2025-07-22 14:42:26,Report generation started,INFO\n10.0.0.100,sess_296376,anna.garcia,2025-07-22 14:42:26,Email notification sent,DEBUG\n10.0.0.100,sess_296376,anna.garcia,2025-07-22 15:04:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.15,sess_540622,sarah.wilson,2025-07-22 14:22:26,User authentication successful,INFO\n192.168.1.15,sess_540622,sarah.wilson,2025-07-22 14:25:26,Resource access granted,INFO\n192.168.1.15,sess_540622,sarah.wilson,2025-07-22 14:28:26,Loading user dashboard,INFO\n192.168.1.15,sess_540622,sarah.wilson,2025-07-22 14:37:26,Resource access granted,DEBUG\n192.168.1.15,sess_540622,sarah.wilson,2025-07-22 14:52:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n10.0.0.110,sess_737635,david.brown,2025-07-22 14:22:26,User authentication successful,INFO\n10.0.0.110,sess_737635,david.brown,2025-07-22 14:25:26,Transaction processed,DEBUG\n10.0.0.110,sess_737635,david.brown,2025-07-22 14:26:26,User authentication successful,DEBUG\n10.0.0.110,sess_737635,david.brown,2025-07-22 14:28:26,User logout successful,DEBUG\n10.0.0.110,sess_737635,david.brown,2025-07-22 14:30:26,Accessing user profile,INFO\n10.0.0.110,sess_737635,david.brown,2025-07-22 14:32:26,API call to user service,DEBUG\n10.0.0.110,sess_737635,david.brown,2025-07-22 14:37:26,Email notification sent,INFO\n10.0.0.110,sess_737635,david.brown,2025-07-22 14:54:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n10.0.0.100,sess_794203,chris.rodriguez,2025-07-22 14:22:26,User authentication successful,INFO\n10.0.0.100,sess_794203,chris.rodriguez,2025-07-22 14:24:26,User preferences loaded,DEBUG\n10.0.0.100,sess_794203,chris.rodriguez,2025-07-22 14:28:26,Cache refresh completed,INFO\n10.0.0.100,sess_794203,chris.rodriguez,2025-07-22 14:34:26,Session started,INFO\n10.0.0.100,sess_794203,chris.rodriguez,2025-07-22 14:34:26,Accessing user profile,DEBUG\n10.0.0.100,sess_794203,chris.rodriguez,2025-07-22 15:04:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n172.16.1.200,sess_530011,tom.anderson,2025-07-23 14:22:26,User authentication successful,INFO\n172.16.1.200,sess_530011,tom.anderson,2025-07-23 14:23:26,Resource access granted,INFO\n172.16.1.200,sess_530011,tom.anderson,2025-07-23 14:26:26,User preferences loaded,DEBUG\n172.16.1.200,sess_530011,tom.anderson,2025-07-23 14:34:26,User preferences loaded,DEBUG\n172.16.1.200,sess_530011,tom.anderson,2025-07-23 14:34:26,Connection established,INFO\n172.16.1.200,sess_530011,tom.anderson,2025-07-23 14:37:26,Cache refresh completed,DEBUG\n172.16.1.200,sess_530011,tom.anderson,2025-07-23 14:37:26,Email notification sent,DEBUG\n172.16.1.200,sess_530011,tom.anderson,2025-07-23 14:54:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n172.16.1.200,sess_785969,mike.johnson,2025-07-23 14:22:26,User authentication successful,INFO\n172.16.1.200,sess_785969,mike.johnson,2025-07-23 14:25:26,Backup operation completed,DEBUG\n172.16.1.200,sess_785969,mike.johnson,2025-07-23 14:26:26,API call to user service,INFO\n172.16.1.200,sess_785969,mike.johnson,2025-07-23 14:26:26,Report generation started,INFO\n172.16.1.200,sess_785969,mike.johnson,2025-07-23 14:27:26,User logout successful,DEBUG\n172.16.1.200,sess_785969,mike.johnson,2025-07-23 14:28:26,User logout successful,INFO\n172.16.1.200,sess_785969,mike.johnson,2025-07-23 14:30:26,Email notification sent,DEBUG\n172.16.1.200,sess_785969,mike.johnson,2025-07-23 15:26:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.10,sess_750740,kevin.lee,2025-07-24 14:22:26,User authentication successful,INFO\n192.168.1.10,sess_750740,kevin.lee,2025-07-24 14:24:26,Form submission processed,INFO\n192.168.1.10,sess_750740,kevin.lee,2025-07-24 14:24:26,Resource access granted,INFO\n192.168.1.10,sess_750740,kevin.lee,2025-07-24 14:25:26,Session timeout warning,DEBUG\n192.168.1.10,sess_750740,kevin.lee,2025-07-24 14:37:26,Session started,DEBUG\n192.168.1.10,sess_750740,kevin.lee,2025-07-24 14:40:26,Session timeout warning,DEBUG\n192.168.1.10,sess_750740,kevin.lee,2025-07-24 14:42:26,User logout successful,DEBUG\n192.168.1.10,sess_750740,kevin.lee,2025-07-24 15:02:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n10.0.0.100,sess_484646,robert.clark,2025-07-24 14:22:26,User authentication successful,INFO\n10.0.0.100,sess_484646,robert.clark,2025-07-24 14:24:26,Accessing user profile,DEBUG\n10.0.0.100,sess_484646,robert.clark,2025-07-24 14:25:26,Transaction processed,DEBUG\n10.0.0.100,sess_484646,robert.clark,2025-07-24 14:37:26,Cache refresh completed,INFO\n10.0.0.100,sess_484646,robert.clark,2025-07-24 14:38:26,Backup operation completed,INFO\n10.0.0.100,sess_484646,robert.clark,2025-07-24 15:10:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n185.220.101.42,sess_631756,test,2025-07-24 14:22:26,Authentication failed for user test,ERROR\n185.220.101.42,sess_631756,test,2025-07-24 14:24:26,Authentication failed for user test,ERROR\n185.220.101.42,sess_631756,test,2025-07-24 14:26:26,Authentication failed for user test,ERROR\n185.220.101.42,sess_631756,admin,2025-07-24 14:32:26,Authentication failed for user admin,ERROR\n185.220.101.42,sess_631756,admin,2025-07-24 14:34:26,Authentication failed for user admin,ERROR\n185.220.101.42,sess_631756,admin,2025-07-24 14:36:26,Authentication failed for user admin,ERROR\n185.220.101.42,sess_631756,default,2025-07-24 14:42:26,Authentication failed for user default,ERROR\n185.220.101.42,sess_631756,default,2025-07-24 14:44:26,Authentication failed for user default,ERROR\n185.220.101.42,sess_631756,default,2025-07-24 14:46:26,Authentication failed for user default,ERROR\n185.220.101.42,sess_631756,system,2025-07-24 14:57:26,Multiple failed login attempts detected,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.10,sess_280941,robert.clark,2025-07-25 14:22:26,User authentication successful,INFO\n192.168.1.10,sess_280941,robert.clark,2025-07-25 14:24:26,Security check passed,DEBUG\n192.168.1.10,sess_280941,robert.clark,2025-07-25 14:24:26,Email notification sent,DEBUG\n192.168.1.10,sess_280941,robert.clark,2025-07-25 14:25:26,User preferences loaded,INFO\n192.168.1.10,sess_280941,robert.clark,2025-07-25 14:42:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n172.16.0.50,sess_948117,jane.smith,2025-07-25 14:22:26,User authentication successful,INFO\n172.16.0.50,sess_948117,jane.smith,2025-07-25 14:25:26,Resource access granted,INFO\n172.16.0.50,sess_948117,jane.smith,2025-07-25 14:28:26,Session timeout warning,INFO\n172.16.0.50,sess_948117,jane.smith,2025-07-25 14:30:26,Email notification sent,INFO\n172.16.0.50,sess_948117,jane.smith,2025-07-25 14:37:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n203.0.113.45,sess_646271,david.brown,2025-07-27 14:22:26,User authentication successful,INFO\n203.0.113.45,sess_646271,david.brown,2025-07-27 14:25:26,Data validation successful,DEBUG\n203.0.113.45,sess_646271,david.brown,2025-07-27 14:26:26,Form submission processed,INFO\n203.0.113.45,sess_646271,david.brown,2025-07-27 14:26:26,Transaction processed,INFO\n203.0.113.45,sess_646271,david.brown,2025-07-27 14:31:26,Session timeout warning,INFO\n203.0.113.45,sess_646271,david.brown,2025-07-27 14:52:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n91.189.89.199,sess_752130,root,2025-07-27 14:22:26,Authentication failed for user root,ERROR\n185.220.101.42,sess_752130,root,2025-07-27 14:24:26,Authentication failed for user root,ERROR\n185.220.101.42,sess_752130,root,2025-07-27 14:26:26,Authentication failed for user root,ERROR\n185.220.101.42,sess_752130,root,2025-07-27 14:28:26,Authentication failed for user root,ERROR\n185.220.101.42,sess_752130,root,2025-07-27 14:30:26,Authentication failed for user root,ERROR\n91.189.89.199,sess_752130,root,2025-07-27 14:32:26,Authentication failed for user root,ERROR\n91.189.89.199,sess_752130,root,2025-07-27 14:34:26,Authentication failed for user root,ERROR\n185.220.101.42,sess_752130,root,2025-07-27 14:36:26,Authentication failed for user root,ERROR\n91.189.89.199,sess_752130,root,2025-07-27 14:42:26,Brute force attack identified,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n94.102.49.190,sess_415594,tom.anderson,2025-07-28 14:22:26,User authentication successful,INFO\n94.102.49.190,sess_415594,tom.anderson,2025-07-28 14:24:26,Database query executed,INFO\n94.102.49.190,sess_415594,tom.anderson,2025-07-28 14:26:26,Abnormal data access volume,ERROR\n94.102.49.190,sess_415594,tom.anderson,2025-07-28 14:28:26,Data exfiltration pattern,ERROR\n94.102.49.190,sess_415594,tom.anderson,2025-07-28 14:30:26,Suspicious file access pattern,ERROR\n94.102.49.190,sess_415594,tom.anderson,2025-07-28 14:32:26,Network intrusion detected,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n198.51.100.78,sess_413503,maria.lopez,2025-07-29 14:22:26,User authentication successful,INFO\n198.51.100.78,sess_413503,maria.lopez,2025-07-29 14:24:26,Connection established,INFO\n198.51.100.78,sess_413503,maria.lopez,2025-07-29 14:25:26,File upload initiated,INFO\n198.51.100.78,sess_413503,maria.lopez,2025-07-29 14:26:26,Cache refresh completed,DEBUG\n198.51.100.78,sess_413503,maria.lopez,2025-07-29 14:31:26,Transaction processed,INFO\n198.51.100.78,sess_413503,maria.lopez,2025-07-29 14:42:26,Loading user dashboard,INFO\n198.51.100.78,sess_413503,maria.lopez,2025-07-29 14:43:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n198.51.100.78,sess_995448,jane.smith,2025-07-30 14:22:26,User authentication successful,INFO\n198.51.100.78,sess_995448,jane.smith,2025-07-30 14:25:26,Session started,DEBUG\n198.51.100.78,sess_995448,jane.smith,2025-07-30 14:26:26,Form submission processed,INFO\n198.51.100.78,sess_995448,jane.smith,2025-07-30 14:26:26,Session started,DEBUG\n198.51.100.78,sess_995448,jane.smith,2025-07-30 14:28:26,Data validation successful,DEBUG\n198.51.100.78,sess_995448,jane.smith,2025-07-30 14:34:26,Accessing user profile,DEBUG\n198.51.100.78,sess_995448,jane.smith,2025-07-30 14:42:26,API call to user service,INFO\n198.51.100.78,sess_995448,jane.smith,2025-07-30 15:10:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n77.88.55.80,sess_256163,emma.taylor,2025-07-30 14:22:26,User authentication successful,INFO\n77.88.55.80,sess_256163,emma.taylor,2025-07-30 14:24:26,Database query executed,INFO\n77.88.55.80,sess_256163,emma.taylor,2025-07-30 14:26:26,Abnormal data access volume,ERROR\n77.88.55.80,sess_256163,emma.taylor,2025-07-30 14:28:26,Data exfiltration pattern,ERROR\n77.88.55.80,sess_256163,emma.taylor,2025-07-30 14:30:26,Suspicious file access pattern,ERROR\n77.88.55.80,sess_256163,emma.taylor,2025-07-30 14:32:26,Network intrusion detected,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n203.0.113.45,sess_357646,sarah.wilson,2025-07-31 14:22:26,User authentication successful,INFO\n203.0.113.45,sess_357646,sarah.wilson,2025-07-31 14:23:26,Session started,DEBUG\n203.0.113.45,sess_357646,sarah.wilson,2025-07-31 14:24:26,Email notification sent,DEBUG\n203.0.113.45,sess_357646,sarah.wilson,2025-07-31 14:30:26,Database query executed,INFO\n203.0.113.45,sess_357646,sarah.wilson,2025-07-31 14:34:26,Transaction processed,INFO\n203.0.113.45,sess_357646,sarah.wilson,2025-07-31 14:34:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n172.16.1.200,sess_297951,jane.smith,2025-07-31 14:22:26,User authentication successful,INFO\n172.16.1.200,sess_297951,jane.smith,2025-07-31 14:24:26,Database query executed,INFO\n172.16.1.200,sess_297951,jane.smith,2025-07-31 14:24:26,Loading user dashboard,INFO\n172.16.1.200,sess_297951,jane.smith,2025-07-31 14:31:26,Connection established,INFO\n172.16.1.200,sess_297951,jane.smith,2025-07-31 14:34:26,User logout successful,INFO\n172.16.1.200,sess_297951,jane.smith,2025-07-31 14:42:26,User preferences loaded,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n10.0.0.105,sess_691404,jane.smith,2025-07-31 14:22:26,User authentication successful,INFO\n10.0.0.105,sess_691404,jane.smith,2025-07-31 14:26:26,Session timeout warning,INFO\n10.0.0.105,sess_691404,jane.smith,2025-07-31 14:26:26,Session timeout warning,DEBUG\n10.0.0.105,sess_691404,jane.smith,2025-07-31 14:34:26,Form submission processed,INFO\n10.0.0.105,sess_691404,jane.smith,2025-07-31 14:34:26,Resource access granted,INFO\n10.0.0.105,sess_691404,jane.smith,2025-07-31 14:37:26,Transaction processed,DEBUG\n10.0.0.105,sess_691404,jane.smith,2025-07-31 14:42:26,API call to user service,INFO\n10.0.0.105,sess_691404,jane.smith,2025-07-31 14:46:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n134.195.196.26,sess_212573,administrator,2025-07-31 14:22:26,Authentication failed for user administrator,ERROR\n91.189.89.199,sess_212573,administrator,2025-07-31 14:24:26,Authentication failed for user administrator,ERROR\n134.195.196.26,sess_212573,administrator,2025-07-31 14:26:26,Authentication failed for user administrator,ERROR\n91.189.89.199,sess_212573,administrator,2025-07-31 14:28:26,Authentication failed for user administrator,ERROR\n134.195.196.26,sess_212573,administrator,2025-07-31 14:30:26,Authentication failed for user administrator,ERROR\n91.189.89.199,sess_212573,administrator,2025-07-31 14:32:26,Authentication failed for user administrator,ERROR\n91.189.89.199,sess_212573,administrator,2025-07-31 14:34:26,Authentication failed for user administrator,ERROR\n134.195.196.26,sess_212573,administrator,2025-07-31 14:36:26,Authentication failed for user administrator,ERROR\n91.189.89.199,sess_212573,administrator,2025-07-31 14:42:26,Brute force attack identified,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n91.189.89.199,sess_869501,kevin.lee,2025-08-01 14:22:26,User authentication successful,INFO\n91.189.89.199,sess_869501,kevin.lee,2025-08-01 14:24:26,Database query executed,INFO\n91.189.89.199,sess_869501,kevin.lee,2025-08-01 14:26:26,Malformed request detected,ERROR\n91.189.89.199,sess_869501,kevin.lee,2025-08-01 14:28:26,SQL injection attempt blocked,ERROR\n91.189.89.199,sess_869501,kevin.lee,2025-08-01 14:30:26,Security policy violation,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n185.220.101.42,sess_424133,lisa.davis,2025-08-01 14:22:26,User authentication successful,INFO\n185.220.101.42,sess_424133,lisa.davis,2025-08-01 14:24:26,Database query executed,INFO\n185.220.101.42,sess_424133,lisa.davis,2025-08-01 14:26:26,Abnormal data access volume,ERROR\n185.220.101.42,sess_424133,lisa.davis,2025-08-01 14:28:26,Data exfiltration pattern,ERROR\n185.220.101.42,sess_424133,lisa.davis,2025-08-01 14:30:26,Suspicious file access pattern,ERROR\n185.220.101.42,sess_424133,lisa.davis,2025-08-01 14:32:26,Network intrusion detected,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n185.220.101.42,sess_476054,david.brown,2025-08-01 14:22:26,User authentication successful,INFO\n185.220.101.42,sess_476054,david.brown,2025-08-01 14:24:26,Database query executed,INFO\n185.220.101.42,sess_476054,david.brown,2025-08-01 14:26:26,Abnormal data access volume,ERROR\n185.220.101.42,sess_476054,david.brown,2025-08-01 14:28:26,Data exfiltration pattern,ERROR\n185.220.101.42,sess_476054,david.brown,2025-08-01 14:30:26,Suspicious file access pattern,ERROR\n185.220.101.42,sess_476054,david.brown,2025-08-01 14:32:26,Network intrusion detected,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n185.220.101.42,sess_173723,kevin.lee,2025-08-01 14:22:26,User authentication successful,INFO\n185.220.101.42,sess_173723,kevin.lee,2025-08-01 14:24:26,Database query executed,INFO\n185.220.101.42,sess_173723,kevin.lee,2025-08-01 14:26:26,Malformed request detected,ERROR\n185.220.101.42,sess_173723,kevin.lee,2025-08-01 14:28:26,SQL injection attempt blocked,ERROR\n185.220.101.42,sess_173723,kevin.lee,2025-08-01 14:30:26,Security policy violation,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.10,sess_681033,robert.clark,2025-08-02 14:22:26,User authentication successful,INFO\n192.168.1.10,sess_681033,robert.clark,2025-08-02 14:27:26,Report generation started,INFO\n192.168.1.10,sess_681033,robert.clark,2025-08-02 14:30:26,Session started,DEBUG\n192.168.1.10,sess_681033,robert.clark,2025-08-02 14:37:26,Connection established,DEBUG\n192.168.1.10,sess_681033,robert.clark,2025-08-02 14:42:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.20,sess_908281,robert.clark,2025-08-02 14:22:26,User authentication successful,INFO\n192.168.1.20,sess_908281,robert.clark,2025-08-02 14:25:26,Email notification sent,INFO\n192.168.1.20,sess_908281,robert.clark,2025-08-02 14:28:26,Database query executed,DEBUG\n192.168.1.20,sess_908281,robert.clark,2025-08-02 14:30:26,Loading user dashboard,DEBUG\n192.168.1.20,sess_908281,robert.clark,2025-08-02 14:42:26,User authentication successful,INFO\n192.168.1.20,sess_908281,robert.clark,2025-08-02 14:58:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.10,sess_603505,anna.garcia,2025-08-02 14:22:26,User authentication successful,INFO\n192.168.1.10,sess_603505,anna.garcia,2025-08-02 14:24:26,Security check passed,INFO\n192.168.1.10,sess_603505,anna.garcia,2025-08-02 14:26:26,User logout successful,DEBUG\n192.168.1.10,sess_603505,anna.garcia,2025-08-02 14:30:26,User authentication successful,INFO\n192.168.1.10,sess_603505,anna.garcia,2025-08-02 14:34:26,Resource access granted,DEBUG\n192.168.1.10,sess_603505,anna.garcia,2025-08-02 14:52:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n203.0.113.45,sess_704877,maria.lopez,2025-08-03 14:22:26,User authentication successful,INFO\n203.0.113.45,sess_704877,maria.lopez,2025-08-03 14:24:26,Report generation started,INFO\n203.0.113.45,sess_704877,maria.lopez,2025-08-03 14:24:26,Database query executed,DEBUG\n203.0.113.45,sess_704877,maria.lopez,2025-08-03 14:32:26,User logout successful,INFO\n203.0.113.45,sess_704877,maria.lopez,2025-08-03 14:34:26,User logout successful,DEBUG",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.10,sess_253934,lisa.davis,2025-08-03 14:22:26,User authentication successful,INFO\n192.168.1.10,sess_253934,lisa.davis,2025-08-03 14:24:26,Email notification sent,INFO\n192.168.1.10,sess_253934,lisa.davis,2025-08-03 14:28:26,Accessing user profile,DEBUG\n192.168.1.10,sess_253934,lisa.davis,2025-08-03 14:37:26,Data validation successful,DEBUG\n192.168.1.10,sess_253934,lisa.davis,2025-08-03 14:37:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.20,sess_725261,emma.taylor,2025-08-03 14:22:26,User authentication successful,INFO\n192.168.1.20,sess_725261,emma.taylor,2025-08-03 14:24:26,Transaction processed,INFO\n192.168.1.20,sess_725261,emma.taylor,2025-08-03 14:30:26,Backup operation completed,DEBUG\n192.168.1.20,sess_725261,emma.taylor,2025-08-03 14:31:26,Accessing user profile,INFO\n192.168.1.20,sess_725261,emma.taylor,2025-08-03 14:38:26,Connection established,INFO\n192.168.1.20,sess_725261,emma.taylor,2025-08-03 15:04:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n198.51.100.78,sess_111815,lisa.davis,2025-08-03 14:22:26,User authentication successful,INFO\n198.51.100.78,sess_111815,lisa.davis,2025-08-03 14:26:26,Report generation started,DEBUG\n198.51.100.78,sess_111815,lisa.davis,2025-08-03 14:26:26,User authentication successful,DEBUG\n198.51.100.78,sess_111815,lisa.davis,2025-08-03 14:34:26,File upload initiated,INFO\n198.51.100.78,sess_111815,lisa.davis,2025-08-03 14:42:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n159.203.178.9,sess_327086,robert.clark,2025-08-03 14:22:26,User authentication successful,INFO\n159.203.178.9,sess_327086,robert.clark,2025-08-03 14:24:26,Database query executed,INFO\n159.203.178.9,sess_327086,robert.clark,2025-08-03 14:26:26,Abnormal data access volume,ERROR\n159.203.178.9,sess_327086,robert.clark,2025-08-03 14:28:26,Data exfiltration pattern,ERROR\n159.203.178.9,sess_327086,robert.clark,2025-08-03 14:30:26,Suspicious file access pattern,ERROR\n159.203.178.9,sess_327086,robert.clark,2025-08-03 14:32:26,Network intrusion detected,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n172.16.0.50,sess_164825,john.doe,2025-08-04 14:22:26,User authentication successful,INFO\n172.16.0.50,sess_164825,john.doe,2025-08-04 14:23:26,File upload initiated,INFO\n172.16.0.50,sess_164825,john.doe,2025-08-04 14:24:26,Connection established,INFO\n172.16.0.50,sess_164825,john.doe,2025-08-04 14:25:26,Resource access granted,INFO\n172.16.0.50,sess_164825,john.doe,2025-08-04 14:57:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n203.0.113.45,sess_603141,chris.rodriguez,2025-08-04 14:22:26,User authentication successful,INFO\n203.0.113.45,sess_603141,chris.rodriguez,2025-08-04 14:27:26,Database query executed,INFO\n203.0.113.45,sess_603141,chris.rodriguez,2025-08-04 14:28:26,Report generation started,DEBUG\n203.0.113.45,sess_603141,chris.rodriguez,2025-08-04 14:30:26,User authentication successful,INFO\n203.0.113.45,sess_603141,chris.rodriguez,2025-08-04 14:31:26,Resource access granted,INFO\n203.0.113.45,sess_603141,chris.rodriguez,2025-08-04 14:32:26,Connection established,DEBUG\n203.0.113.45,sess_603141,chris.rodriguez,2025-08-04 14:42:26,Backup operation completed,DEBUG\n203.0.113.45,sess_603141,chris.rodriguez,2025-08-04 15:02:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n203.0.113.45,sess_431391,john.doe,2025-08-04 14:22:26,User authentication successful,INFO\n203.0.113.45,sess_431391,john.doe,2025-08-04 14:25:26,User authentication successful,INFO\n203.0.113.45,sess_431391,john.doe,2025-08-04 14:28:26,Transaction processed,DEBUG\n203.0.113.45,sess_431391,john.doe,2025-08-04 14:28:26,User logout successful,DEBUG\n203.0.113.45,sess_431391,john.doe,2025-08-04 14:31:26,Security check passed,DEBUG\n203.0.113.45,sess_431391,john.doe,2025-08-04 14:42:26,User logout successful,DEBUG\n203.0.113.45,sess_431391,john.doe,2025-08-04 14:46:26,User logout successful,INFO\n203.0.113.45,sess_431391,john.doe,2025-08-04 14:47:26,Email notification sent,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n185.220.101.42,sess_605603,anna.garcia,2025-08-04 14:22:26,User authentication successful,INFO\n185.220.101.42,sess_605603,anna.garcia,2025-08-04 14:24:26,Elevated permissions requested,ERROR\n185.220.101.42,sess_605603,anna.garcia,2025-08-04 14:26:26,System file access attempt,ERROR\n185.220.101.42,sess_605603,anna.garcia,2025-08-04 14:28:26,Privilege escalation detected,ERROR\n185.220.101.42,sess_605603,anna.garcia,2025-08-04 14:30:26,Security policy violation,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n198.51.100.78,sess_367497,robert.clark,2025-08-05 14:22:26,User authentication successful,INFO\n198.51.100.78,sess_367497,robert.clark,2025-08-05 14:24:26,Connection established,DEBUG\n198.51.100.78,sess_367497,robert.clark,2025-08-05 14:24:26,Report generation started,INFO\n198.51.100.78,sess_367497,robert.clark,2025-08-05 14:34:26,Backup operation completed,INFO\n198.51.100.78,sess_367497,robert.clark,2025-08-05 14:34:26,Database query executed,DEBUG\n198.51.100.78,sess_367497,robert.clark,2025-08-05 14:47:26,Form submission processed,DEBUG\n198.51.100.78,sess_367497,robert.clark,2025-08-05 15:04:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.15,sess_516655,alex.martin,2025-08-06 14:22:26,User authentication successful,INFO\n192.168.1.15,sess_516655,alex.martin,2025-08-06 14:26:26,API call to user service,DEBUG\n192.168.1.15,sess_516655,alex.martin,2025-08-06 14:31:26,User authentication successful,DEBUG\n192.168.1.15,sess_516655,alex.martin,2025-08-06 14:32:26,API call to user service,DEBUG\n192.168.1.15,sess_516655,alex.martin,2025-08-06 14:57:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n10.0.0.105,sess_721577,david.brown,2025-08-07 14:22:26,User authentication successful,INFO\n10.0.0.105,sess_721577,david.brown,2025-08-07 14:26:26,Database query executed,INFO\n10.0.0.105,sess_721577,david.brown,2025-08-07 14:28:26,File upload initiated,DEBUG\n10.0.0.105,sess_721577,david.brown,2025-08-07 14:32:26,User logout successful,INFO\n10.0.0.105,sess_721577,david.brown,2025-08-07 14:34:26,Session timeout warning,DEBUG",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n185.220.101.42,sess_919559,amy.white,2025-08-07 14:22:26,User authentication successful,INFO\n185.220.101.42,sess_919559,amy.white,2025-08-07 14:24:26,Database query executed,INFO\n185.220.101.42,sess_919559,amy.white,2025-08-07 14:26:26,Abnormal data access volume,ERROR\n185.220.101.42,sess_919559,amy.white,2025-08-07 14:28:26,Data exfiltration pattern,ERROR\n185.220.101.42,sess_919559,amy.white,2025-08-07 14:30:26,Suspicious file access pattern,ERROR\n185.220.101.42,sess_919559,amy.white,2025-08-07 14:32:26,Network intrusion detected,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.25,sess_327648,sarah.wilson,2025-08-08 14:22:26,User authentication successful,INFO\n192.168.1.25,sess_327648,sarah.wilson,2025-08-08 14:26:26,API call to user service,DEBUG\n192.168.1.25,sess_327648,sarah.wilson,2025-08-08 14:27:26,Session started,INFO\n192.168.1.25,sess_327648,sarah.wilson,2025-08-08 14:34:26,Data validation successful,INFO\n192.168.1.25,sess_327648,sarah.wilson,2025-08-08 14:57:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.20,sess_398375,sarah.wilson,2025-08-08 14:22:26,User authentication successful,INFO\n192.168.1.20,sess_398375,sarah.wilson,2025-08-08 14:26:26,User preferences loaded,DEBUG\n192.168.1.20,sess_398375,sarah.wilson,2025-08-08 14:26:26,User authentication successful,INFO\n192.168.1.20,sess_398375,sarah.wilson,2025-08-08 14:31:26,Session started,INFO\n192.168.1.20,sess_398375,sarah.wilson,2025-08-08 14:37:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n134.195.196.26,sess_179378,user123,2025-08-08 14:22:26,Authentication failed for user user123,ERROR\n134.195.196.26,sess_179378,user123,2025-08-08 14:24:26,Authentication failed for user user123,ERROR\n134.195.196.26,sess_179378,user123,2025-08-08 14:26:26,Authentication failed for user user123,ERROR\n134.195.196.26,sess_179378,test,2025-08-08 14:32:26,Authentication failed for user test,ERROR\n134.195.196.26,sess_179378,test,2025-08-08 14:34:26,Authentication failed for user test,ERROR\n134.195.196.26,sess_179378,test,2025-08-08 14:36:26,Authentication failed for user test,ERROR\n134.195.196.26,sess_179378,tempuser,2025-08-08 14:42:26,Authentication failed for user tempuser,ERROR\n134.195.196.26,sess_179378,tempuser,2025-08-08 14:44:26,Authentication failed for user tempuser,ERROR\n134.195.196.26,sess_179378,tempuser,2025-08-08 14:46:26,Authentication failed for user tempuser,ERROR\n134.195.196.26,sess_179378,system,2025-08-08 14:57:26,Multiple failed login attempts detected,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n10.0.0.105,sess_379231,jane.smith,2025-08-09 14:22:26,User authentication successful,INFO\n10.0.0.105,sess_379231,jane.smith,2025-08-09 14:25:26,Accessing user profile,DEBUG\n10.0.0.105,sess_379231,jane.smith,2025-08-09 14:26:26,User authentication successful,DEBUG\n10.0.0.105,sess_379231,jane.smith,2025-08-09 14:28:26,Email notification sent,DEBUG\n10.0.0.105,sess_379231,jane.smith,2025-08-09 14:34:26,User logout successful,INFO\n10.0.0.105,sess_379231,jane.smith,2025-08-09 14:37:26,Report generation started,DEBUG",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n10.0.0.110,sess_254815,anna.garcia,2025-08-09 14:22:26,User authentication successful,INFO\n10.0.0.110,sess_254815,anna.garcia,2025-08-09 14:23:26,Accessing user profile,INFO\n10.0.0.110,sess_254815,anna.garcia,2025-08-09 14:24:26,Backup operation completed,DEBUG\n10.0.0.110,sess_254815,anna.garcia,2025-08-09 14:34:26,Transaction processed,DEBUG\n10.0.0.110,sess_254815,anna.garcia,2025-08-09 14:37:26,Connection established,INFO\n10.0.0.110,sess_254815,anna.garcia,2025-08-09 14:40:26,Backup operation completed,INFO\n10.0.0.110,sess_254815,anna.garcia,2025-08-09 14:47:26,Backup operation completed,INFO\n10.0.0.110,sess_254815,anna.garcia,2025-08-09 15:10:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n172.16.1.200,sess_477612,tom.anderson,2025-08-10 14:22:26,User authentication successful,INFO\n172.16.1.200,sess_477612,tom.anderson,2025-08-10 14:24:26,Transaction processed,DEBUG\n172.16.1.200,sess_477612,tom.anderson,2025-08-10 14:26:26,Form submission processed,INFO\n172.16.1.200,sess_477612,tom.anderson,2025-08-10 14:28:26,User authentication successful,INFO\n172.16.1.200,sess_477612,tom.anderson,2025-08-10 14:34:26,Database query executed,DEBUG\n172.16.1.200,sess_477612,tom.anderson,2025-08-10 14:46:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.10,sess_875728,jane.smith,2025-08-10 14:22:26,User authentication successful,INFO\n192.168.1.10,sess_875728,jane.smith,2025-08-10 14:25:26,Loading user dashboard,INFO\n192.168.1.10,sess_875728,jane.smith,2025-08-10 14:27:26,Form submission processed,INFO\n192.168.1.10,sess_875728,jane.smith,2025-08-10 14:27:26,Connection established,INFO\n192.168.1.10,sess_875728,jane.smith,2025-08-10 14:28:26,Email notification sent,INFO\n192.168.1.10,sess_875728,jane.smith,2025-08-10 14:38:26,Loading user dashboard,DEBUG\n192.168.1.10,sess_875728,jane.smith,2025-08-10 14:43:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n185.220.101.42,sess_606211,anna.garcia,2025-08-10 14:22:26,User authentication successful,INFO\n185.220.101.42,sess_606211,anna.garcia,2025-08-10 14:24:26,Database query executed,INFO\n185.220.101.42,sess_606211,anna.garcia,2025-08-10 14:26:26,Abnormal data access volume,ERROR\n185.220.101.42,sess_606211,anna.garcia,2025-08-10 14:28:26,Data exfiltration pattern,ERROR\n185.220.101.42,sess_606211,anna.garcia,2025-08-10 14:30:26,Suspicious file access pattern,ERROR\n185.220.101.42,sess_606211,anna.garcia,2025-08-10 14:32:26,Network intrusion detected,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.25,sess_546870,maria.lopez,2025-08-11 14:22:26,User authentication successful,INFO\n192.168.1.25,sess_546870,maria.lopez,2025-08-11 14:27:26,User preferences loaded,INFO\n192.168.1.25,sess_546870,maria.lopez,2025-08-11 14:28:26,Backup operation completed,DEBUG\n192.168.1.25,sess_546870,maria.lopez,2025-08-11 14:32:26,Transaction processed,DEBUG\n192.168.1.25,sess_546870,maria.lopez,2025-08-11 14:47:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n10.0.0.110,sess_166215,emma.taylor,2025-08-11 14:22:26,User authentication successful,INFO\n10.0.0.110,sess_166215,emma.taylor,2025-08-11 14:24:26,API call to user service,INFO\n10.0.0.110,sess_166215,emma.taylor,2025-08-11 14:26:26,Backup operation completed,DEBUG\n10.0.0.110,sess_166215,emma.taylor,2025-08-11 14:28:26,Cache refresh completed,INFO\n10.0.0.110,sess_166215,emma.taylor,2025-08-11 14:30:26,User logout successful,DEBUG\n10.0.0.110,sess_166215,emma.taylor,2025-08-11 15:04:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.20,sess_369945,jane.smith,2025-08-12 14:22:26,User authentication successful,INFO\n192.168.1.20,sess_369945,jane.smith,2025-08-12 14:27:26,Session started,INFO\n192.168.1.20,sess_369945,jane.smith,2025-08-12 14:32:26,API call to user service,INFO\n192.168.1.20,sess_369945,jane.smith,2025-08-12 14:37:26,Connection established,INFO\n192.168.1.20,sess_369945,jane.smith,2025-08-12 14:37:26,User logout successful,DEBUG\n192.168.1.20,sess_369945,jane.smith,2025-08-12 14:42:26,Database query executed,INFO\n192.168.1.20,sess_369945,jane.smith,2025-08-12 15:18:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.10,sess_862035,chris.rodriguez,2025-08-12 14:22:26,User authentication successful,INFO\n192.168.1.10,sess_862035,chris.rodriguez,2025-08-12 14:23:26,Data validation successful,INFO\n192.168.1.10,sess_862035,chris.rodriguez,2025-08-12 14:26:26,Accessing user profile,DEBUG\n192.168.1.10,sess_862035,chris.rodriguez,2025-08-12 14:26:26,Data validation successful,DEBUG\n192.168.1.10,sess_862035,chris.rodriguez,2025-08-12 14:28:26,File upload initiated,INFO\n192.168.1.10,sess_862035,chris.rodriguez,2025-08-12 14:32:26,File upload initiated,DEBUG\n192.168.1.10,sess_862035,chris.rodriguez,2025-08-12 14:57:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n159.203.178.9,sess_433922,user123,2025-08-12 14:22:26,Authentication failed for user user123,ERROR\n159.203.178.9,sess_433922,user123,2025-08-12 14:24:26,Authentication failed for user user123,ERROR\n159.203.178.9,sess_433922,user123,2025-08-12 14:26:26,Authentication failed for user user123,ERROR\n159.203.178.9,sess_433922,tempuser,2025-08-12 14:32:26,Authentication failed for user tempuser,ERROR\n159.203.178.9,sess_433922,tempuser,2025-08-12 14:34:26,Authentication failed for user tempuser,ERROR\n159.203.178.9,sess_433922,tempuser,2025-08-12 14:36:26,Authentication failed for user tempuser,ERROR\n159.203.178.9,sess_433922,admin,2025-08-12 14:42:26,Authentication failed for user admin,ERROR\n159.203.178.9,sess_433922,admin,2025-08-12 14:44:26,Authentication failed for user admin,ERROR\n159.203.178.9,sess_433922,admin,2025-08-12 14:46:26,Authentication failed for user admin,ERROR\n159.203.178.9,sess_433922,system,2025-08-12 14:57:26,Multiple failed login attempts detected,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n91.189.89.199,sess_268980,john.doe,2025-08-12 14:22:26,User authentication successful,INFO\n91.189.89.199,sess_268980,john.doe,2025-08-12 14:24:26,Elevated permissions requested,ERROR\n91.189.89.199,sess_268980,john.doe,2025-08-12 14:26:26,System file access attempt,ERROR\n91.189.89.199,sess_268980,john.doe,2025-08-12 14:28:26,Privilege escalation detected,ERROR\n91.189.89.199,sess_268980,john.doe,2025-08-12 14:30:26,Security policy violation,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n77.88.55.80,sess_234654,guest,2025-08-14 14:22:26,Authentication failed for user guest,ERROR\n185.220.101.42,sess_234654,guest,2025-08-14 14:24:26,Authentication failed for user guest,ERROR\n77.88.55.80,sess_234654,guest,2025-08-14 14:26:26,Authentication failed for user guest,ERROR\n185.220.101.42,sess_234654,guest,2025-08-14 14:28:26,Authentication failed for user guest,ERROR\n185.220.101.42,sess_234654,guest,2025-08-14 14:30:26,Authentication failed for user guest,ERROR\n185.220.101.42,sess_234654,guest,2025-08-14 14:32:26,Authentication failed for user guest,ERROR\n185.220.101.42,sess_234654,guest,2025-08-14 14:34:26,Authentication failed for user guest,ERROR\n77.88.55.80,sess_234654,guest,2025-08-14 14:36:26,Authentication failed for user guest,ERROR\n185.220.101.42,sess_234654,guest,2025-08-14 14:42:26,Brute force attack identified,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n134.195.196.26,sess_319622,test,2025-08-14 14:22:26,Authentication failed for user test,ERROR\n134.195.196.26,sess_319622,test,2025-08-14 14:24:26,Authentication failed for user test,ERROR\n159.203.178.9,sess_319622,test,2025-08-14 14:26:26,Authentication failed for user test,ERROR\n159.203.178.9,sess_319622,test,2025-08-14 14:28:26,Authentication failed for user test,ERROR\n134.195.196.26,sess_319622,test,2025-08-14 14:30:26,Authentication failed for user test,ERROR\n159.203.178.9,sess_319622,test,2025-08-14 14:32:26,Authentication failed for user test,ERROR\n134.195.196.26,sess_319622,test,2025-08-14 14:34:26,Authentication failed for user test,ERROR\n134.195.196.26,sess_319622,test,2025-08-14 14:36:26,Authentication failed for user test,ERROR\n134.195.196.26,sess_319622,test,2025-08-14 14:42:26,Brute force attack identified,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n10.0.0.110,sess_263630,chris.rodriguez,2025-08-15 14:22:26,User authentication successful,INFO\n10.0.0.110,sess_263630,chris.rodriguez,2025-08-15 14:24:26,Data validation successful,DEBUG\n10.0.0.110,sess_263630,chris.rodriguez,2025-08-15 14:26:26,Form submission processed,DEBUG\n10.0.0.110,sess_263630,chris.rodriguez,2025-08-15 14:31:26,Session started,DEBUG\n10.0.0.110,sess_263630,chris.rodriguez,2025-08-15 14:32:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n198.51.100.78,sess_103966,chris.rodriguez,2025-08-16 14:22:26,User authentication successful,INFO\n198.51.100.78,sess_103966,chris.rodriguez,2025-08-16 14:23:26,Session timeout warning,INFO\n198.51.100.78,sess_103966,chris.rodriguez,2025-08-16 14:24:26,Security check passed,INFO\n198.51.100.78,sess_103966,chris.rodriguez,2025-08-16 14:34:26,Accessing user profile,DEBUG\n198.51.100.78,sess_103966,chris.rodriguez,2025-08-16 14:37:26,Connection established,INFO\n198.51.100.78,sess_103966,chris.rodriguez,2025-08-16 14:38:26,Form submission processed,DEBUG\n198.51.100.78,sess_103966,chris.rodriguez,2025-08-16 14:52:26,Session started,DEBUG\n198.51.100.78,sess_103966,chris.rodriguez,2025-08-16 15:02:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n203.0.113.45,sess_636803,tom.anderson,2025-08-18 14:22:26,User authentication successful,INFO\n203.0.113.45,sess_636803,tom.anderson,2025-08-18 14:23:26,Session timeout warning,DEBUG\n203.0.113.45,sess_636803,tom.anderson,2025-08-18 14:24:26,Report generation started,INFO\n203.0.113.45,sess_636803,tom.anderson,2025-08-18 14:30:26,Email notification sent,DEBUG\n203.0.113.45,sess_636803,tom.anderson,2025-08-18 14:31:26,Report generation started,INFO\n203.0.113.45,sess_636803,tom.anderson,2025-08-18 14:34:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n198.51.100.78,sess_699964,david.brown,2025-08-19 14:22:26,User authentication successful,INFO\n198.51.100.78,sess_699964,david.brown,2025-08-19 14:24:26,Connection established,DEBUG\n198.51.100.78,sess_699964,david.brown,2025-08-19 14:26:26,Database query executed,DEBUG\n198.51.100.78,sess_699964,david.brown,2025-08-19 14:28:26,Loading user dashboard,INFO\n198.51.100.78,sess_699964,david.brown,2025-08-19 14:32:26,Form submission processed,INFO\n198.51.100.78,sess_699964,david.brown,2025-08-19 14:34:26,Security check passed,DEBUG\n198.51.100.78,sess_699964,david.brown,2025-08-19 14:38:26,API call to user service,DEBUG\n198.51.100.78,sess_699964,david.brown,2025-08-19 14:46:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.20,sess_460670,john.doe,2025-08-19 14:22:26,User authentication successful,INFO\n192.168.1.20,sess_460670,john.doe,2025-08-19 14:24:26,File upload initiated,DEBUG\n192.168.1.20,sess_460670,john.doe,2025-08-19 14:25:26,Report generation started,DEBUG\n192.168.1.20,sess_460670,john.doe,2025-08-19 14:26:26,Loading user dashboard,DEBUG\n192.168.1.20,sess_460670,john.doe,2025-08-19 14:34:26,User preferences loaded,INFO\n192.168.1.20,sess_460670,john.doe,2025-08-19 14:34:26,File upload initiated,INFO\n192.168.1.20,sess_460670,john.doe,2025-08-19 14:37:26,Transaction processed,INFO\n192.168.1.20,sess_460670,john.doe,2025-08-19 15:26:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n159.203.178.9,sess_673819,alex.martin,2025-08-19 14:22:26,User authentication successful,INFO\n159.203.178.9,sess_673819,alex.martin,2025-08-19 14:24:26,Elevated permissions requested,ERROR\n159.203.178.9,sess_673819,alex.martin,2025-08-19 14:26:26,System file access attempt,ERROR\n159.203.178.9,sess_673819,alex.martin,2025-08-19 14:28:26,Privilege escalation detected,ERROR\n159.203.178.9,sess_673819,alex.martin,2025-08-19 14:30:26,Security policy violation,ERROR",
+    "output": "suspicious"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n203.0.113.45,sess_674365,jane.smith,2025-08-20 14:22:26,User authentication successful,INFO\n203.0.113.45,sess_674365,jane.smith,2025-08-20 14:26:26,Data validation successful,DEBUG\n203.0.113.45,sess_674365,jane.smith,2025-08-20 14:28:26,User preferences loaded,INFO\n203.0.113.45,sess_674365,jane.smith,2025-08-20 14:31:26,Backup operation completed,DEBUG\n203.0.113.45,sess_674365,jane.smith,2025-08-20 14:34:26,File upload initiated,DEBUG\n203.0.113.45,sess_674365,jane.smith,2025-08-20 14:40:26,Database query executed,INFO\n203.0.113.45,sess_674365,jane.smith,2025-08-20 14:42:26,Session started,DEBUG\n203.0.113.45,sess_674365,jane.smith,2025-08-20 15:26:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n10.0.0.105,sess_934432,john.doe,2025-08-20 14:22:26,User authentication successful,INFO\n10.0.0.105,sess_934432,john.doe,2025-08-20 14:23:26,Loading user dashboard,INFO\n10.0.0.105,sess_934432,john.doe,2025-08-20 14:25:26,File upload initiated,DEBUG\n10.0.0.105,sess_934432,john.doe,2025-08-20 14:32:26,Resource access granted,INFO\n10.0.0.105,sess_934432,john.doe,2025-08-20 14:37:26,Email notification sent,INFO\n10.0.0.105,sess_934432,john.doe,2025-08-20 14:38:26,User logout successful,INFO\n10.0.0.105,sess_934432,john.doe,2025-08-20 14:46:26,User logout successful,INFO\n10.0.0.105,sess_934432,john.doe,2025-08-20 15:26:26,User logout successful,INFO",
+    "output": "normal"
+  },
+  {
+    "input": "classify the following log event sequence as normal or suspicious\n192.168.1.15,sess_694227,amy.white,2025-08-20 14:22:26,User authentication successful,INFO\n192.168.1.15,sess_694227,amy.white,2025-08-20 14:25:26,Security check passed,INFO\n192.168.1.15,sess_694227,amy.white,2025-08-20 14:27:26,API call to user service,INFO\n192.168.1.15,sess_694227,amy.white,2025-08-20 14:30:26,Cache refresh completed,DEBUG\n192.168.1.15,sess_694227,amy.white,2025-08-20 14:34:26,User logout successful,INFO\n192.168.1.15,sess_694227,amy.white,2025-08-20 14:42:26,Resource access granted,DEBUG",
+    "output": "normal"
+  }
+]
